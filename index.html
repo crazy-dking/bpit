@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你画我猜 - Draw & Guess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 你画我猜 Draw & Guess</h1>
+            <p>在左侧画板上画画，右侧AI会猜测你画的内容！</p>
+        </header>
+        
+        <div class="game-area">
+            <!-- 左侧画板区域 -->
+            <div class="drawing-section">
+                <div class="drawing-header">
+                    <h3>🖌️ 画板</h3>
+                    <div class="controls">
+                        <button id="clearBtn" class="btn btn-clear">🗑️ 清空</button>
+                        <button id="guessBtn" class="btn btn-guess">🤔 开始猜测</button>
+                    </div>
+                </div>
+                
+                <div class="canvas-container">
+                    <canvas id="drawingCanvas" width="400" height="400"></canvas>
+                </div>
+                
+                <div class="drawing-tools">
+                    <div class="tool-group">
+                        <label>画笔大小：</label>
+                        <input type="range" id="brushSize" min="1" max="20" value="3">
+                        <span id="brushSizeValue">3</span>px
+                    </div>
+                    
+                    <div class="tool-group">
+                        <label>画笔颜色：</label>
+                        <div class="color-palette">
+                            <div class="color-option active" data-color="#000000" style="background-color: #000000;"></div>
+                            <div class="color-option" data-color="#FF0000" style="background-color: #FF0000;"></div>
+                            <div class="color-option" data-color="#00FF00" style="background-color: #00FF00;"></div>
+                            <div class="color-option" data-color="#0000FF" style="background-color: #0000FF;"></div>
+                            <div class="color-option" data-color="#FFFF00" style="background-color: #FFFF00;"></div>
+                            <div class="color-option" data-color="#FF00FF" style="background-color: #FF00FF;"></div>
+                            <div class="color-option" data-color="#00FFFF" style="background-color: #00FFFF;"></div>
+                            <div class="color-option" data-color="#FFA500" style="background-color: #FFA500;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 右侧猜测区域 -->
+            <div class="guess-section">
+                <div class="guess-header">
+                    <h3>🤖 AI猜测</h3>
+                </div>
+                
+                <div class="guess-content">
+                    <div id="guessResult" class="guess-result">
+                        <div class="waiting-state">
+                            <div class="robot-icon">🤖</div>
+                            <p>请在左侧画板上画一些东西，然后点击"开始猜测"按钮！</p>
+                        </div>
+                    </div>
+                    
+                    <div class="guess-history">
+                        <h4>🕒 猜测历史</h4>
+                        <div id="historyList" class="history-list">
+                            <p class="no-history">还没有猜测记录</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-label">总猜测次数：</span>
+                        <span id="totalGuesses" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">当前画笔：</span>
+                        <span id="currentBrush" class="stat-value">黑色 3px</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>💡 提示：画得越清楚，AI猜得越准确哦！试试画一些简单的物体，比如房子、树、车等。</p>
+        </footer>
+    </div>
+    
+    <!-- 加载提示 -->
+    <div id="loadingModal" class="modal">
+        <div class="modal-content">
+            <div class="loading-spinner"></div>
+            <p>AI正在分析你的画作...</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
