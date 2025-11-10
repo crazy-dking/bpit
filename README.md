@@ -1,6 +1,17 @@
 # 🎨 你画我猜 Draw & Guess 游戏
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://crazy-dking.github.io/bpit/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![HTML5](https://img.shields.io/badge/HTML5-Canvas-orange)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)](https://www.javascript.com/)
+
 一个有趣的网页绘画猜测游戏，用户在左侧画板上绘画，AI会尝试猜测用户画的内容。
+
+## 🌐 在线体验
+
+🔗 **[点击这里开始游戏](https://crazy-dking.github.io/bpit/)**
+
+> 无需下载安装，直接在浏览器中体验！支持手机和电脑。
 
 ## 🎮 游戏特色
 
@@ -125,7 +136,22 @@ bpit/
 
 ## 📄 许可证
 
-本项目仅供学习和娱乐使用。
+本项目基于 [MIT License](LICENSE) 开源协议。
+
+## 🤝 贡献
+
+欢迎提交 Issues 和 Pull Requests！
+
+如果你有任何建议或想法，请：
+1. Fork 这个项目
+2. 创建你的功能分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打开一个 Pull Request
+
+## ⭐ 支持项目
+
+如果这个项目对你有帮助，请给它一个 ⭐ Star！
 
 ---
 
