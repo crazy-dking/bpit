@@ -1,0 +1,41 @@
+{
+  "name": "draw-and-guess-game",
+  "version": "1.0.0",
+  "description": "🎨 一个有趣的网页绘画猜测游戏，用户在左侧画板上绘画，AI会尝试猜测用户画的内容。",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "./start.sh",
+    "serve": "python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazy-dking/bpit.git"
+  },
+  "keywords": [
+    "game",
+    "drawing",
+    "canvas",
+    "ai",
+    "html5",
+    "javascript",
+    "web-game",
+    "guess",
+    "paint",
+    "recognition"
+  ],
+  "author": "crazy-dking",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crazy-dking/bpit/issues"
+  },
+  "homepage": "https://crazy-dking.github.io/bpit/",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
